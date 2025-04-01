@@ -17,6 +17,19 @@
       ]
     },
     {
+      "name": "edit-profile-widget",
+      "type": "registry:component",
+      "title": "Edit Profile Widget",
+      "description": "A simple widget to update user profile",
+      "registryDependencies": ["button", "separator", "card"],
+      "files": [
+        {
+          "path": "registry/new-york/widget/edit-profile-widget.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "example-form",
       "type": "registry:component",
       "title": "Example Form",
