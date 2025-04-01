@@ -1,7 +1,7 @@
 import * as React from "react"
 import {OpenInV0Button} from "@/components/open-in-v0-button"
 import {HelloWorld} from "@/registry/new-york/hello-world/hello-world"
-import {EditProfileWidget} from "@/registry/new-york/widget/edit-profile-widget";
+import {EditProfileWidget} from "@/registry/new-york/edit-profile-widget/edit-profile-widget";
 
 export default function Home() {
   return (

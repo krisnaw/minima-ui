@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "edit-profile-widget",
+  "type": "registry:component",
+  "title": "Edit Profile Widget",
+  "description": "A simple widget to update user profile",
+  "registryDependencies": [
+    "button",
+    "separator",
+    "card"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/widget/edit-profile-widget.tsx",
+      "content": "import {Card, CardContent, CardDescription, CardFooter, CardHeader} from \"@/components/ui/card\";\nimport {Separator} from \"@/components/ui/separator\";\nimport {Button} from \"@/components/ui/button\";\nimport {CloudUploadIcon, XIcon} from \"lucide-react\";\n\nexport function EditProfileWidget() {\n    return (\n        <Card className=\"w-[400px]\">\n            <CardHeader>\n                <CardDescription>\n                    <div className=\"flex items-center\">\n                        <div className=\"text-gray-500 text-base\">\n                            Add profile image\n                        </div>\n                        <div className=\"ml-auto pl-3\">\n                            <Button size=\"icon\" variant=\"ghost\">\n                                <XIcon size={18}/>\n                            </Button>\n                        </div>\n                    </div>\n                </CardDescription>\n            </CardHeader>\n            <CardContent>\n\n                <div className=\"flex items-center justify-center\">\n                    <div\n                        className=\"border-2 border-gray-300 border-dashed rounded-full w-48 h-48 p-8 flex flex-col items-center justify-center text-center\">\n                        <CloudUploadIcon className=\"text-gray-400\" />\n                        <div className=\"mt-2\">\n                            <p className=\"text-sm text-gray-400\">Drag and drop your images here</p>\n                        </div>\n                    </div>\n                </div>\n\n\n                <div className=\"flex items-center gap-4 mt-4\">\n                    <Separator className=\"flex-1\" />\n                    <span className=\"text-muted-foreground\">or</span>\n                    <Separator className=\"flex-1\" />\n                </div>\n\n                <div className=\"mt-4\">\n                    <Button className=\"w-full\" variant=\"secondary\" size=\"lg\">Upload a photo</Button>\n                </div>\n            </CardContent>\n            <CardFooter className=\"grid grid-cols-2 gap-4 border-t border-gray-300 pt-4\">\n                <Button className=\"w-full\" variant=\"outline\">Cancel</Button>\n                <Button className=\"w-full\" variant=\"default\">Apply changes</Button>\n            </CardFooter>\n        </Card>\n    )\n}",
+      "type": "registry:component"
+    }
+  ]
+}
